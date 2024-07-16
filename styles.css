@@ -65,18 +65,26 @@ body {
   color: var(--text-color);
 }
 
+.container_title h1 {
+  font-weight: 500;
+}
+
 .container_title hr {
   border-top: var(--primary-color);
 }
 
 .details_form {
-  padding: 20px;
+  padding: 3px 20px 20px 20px;
 }
 
 .details_form_title {
   text-align: left;
   color: var(--text-color);
   width: auto;
+}
+
+.details_form_title > h2 {
+  font-weight: 400;
 }
 
 .details_form_title hr {
