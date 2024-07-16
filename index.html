@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Personal Pension Plan</title>
+  </head>
+  <body>
+    <div class="top_container">
+      <div class="steps">
+        <div class="step active">
+          <div class="step_circle active">1</div>
+          Personal Info
+        </div>
+        <div class="step">
+          <div class="step_circle">2</div>
+          Contacts
+        </div>
+        <div class="step">
+          <div class="step_circle">3</div>
+          Occupation
+        </div>
+        <div class="step">
+          <div class="step_circle">4</div>
+          Source of Funds
+        </div>
+        <div class="step">
+          <div class="step_circle">5</div>
+          Residential Address
+        </div>
+        <div class="step">
+          <div class="step_circle">6</div>
+          Dependants
+        </div>
+        <div class="step">
+          <div class="step_circle">7</div>
+          Next of Kin
+        </div>
+        <div class="step">
+          <div class="step_circle">8</div>
+          Beneficiaries
+        </div>
+        <div class="step">
+          <div class="step_circle">9</div>
+          Summary
+        </div>
+      </div>
+    </div>
+    <div style="padding: 20px">
+      <div class="details_container">
+        <div class="container_title">
+          <h1>Personal Pension Plan</h1>
+          <hr />
+        </div>
+
+        <form class="details_form">
+          <div class="details_form_title">
+            <h2>PERSONAL INFORMATION</h2>
+            <hr />
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" />
+            </div>
+            <div class="form-group">
+              <label for="middleName">Middle Name(s)</label>
+              <input type="text" id="middleName" name="middleName" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" />
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" name="dob" />
+            </div>
+            <div class="form-group">
+              <label for="idDocument">Identification Document</label>
+              <select id="idDocument" name="idDocument">
+                <option value="">Select...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="docNumber">Document Number</label>
+              <input type="text" id="docNumber" name="docNumber" />
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender">
+                <option value="">Select...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="maritalStatus">Marital Status</label>
+              <select id="maritalStatus" name="maritalStatus">
+                <option value="">Select...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="title">Title</label>
+              <select id="title" name="title">
+                <option value="">Select...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="otherTitle">Title (if other)</label>
+              <input type="text" id="otherTitle" name="otherTitle" />
+            </div>
+            <div class="form-group">
+              <label for="pin">PIN</label>
+              <input type="text" id="pin" name="pin" />
+            </div>
+            <div class="form-group">
+              <label for="nationality">Nationality</label>
+              <select id="nationality" name="nationality">
+                <option value="">Select...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="countryOfResidence">Country of Residence</label>
+              <select id="countryOfResidence" name="countryOfResidence">
+                <option value="">Select...</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="next-btn">next</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

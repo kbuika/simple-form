@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #106125;
+  --text-color: #777777;
+  --main-background: #f0f0f0;
+  --top_background: #e3e3e3;
+  --white: #ffffff;
+  --gradient-start: #106125;
+  --gradient-end: #50b848;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  background-color: var(--main-background);
+}
+.top_container {
+  background-color: var(--top_background);
+  padding: 10px 70px;
+}
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.step_circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.step_circle.active {
+  background-color: var(--primary-color);
+}
+.step.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.details_container {
+  background-color: var(--white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container_title {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.container_title hr {
+  border-top: var(--primary-color);
+}
+
+.details_form {
+  padding: 20px;
+}
+
+.details_form_title {
+  text-align: left;
+  color: var(--text-color);
+  width: auto;
+}
+
+.details_form_title hr {
+  width: 100%;
+  border-top: 1px solid var(--primary-color);
+  border: none;
+  margin-bottom: 30px;
+  margin: 20px auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+input,
+select {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: transparent;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border-bottom-color: var(--primary-color);
+}
+.next-btn {
+  background: linear-gradient(
+    to right,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  color: var(--white);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 16px;
+}
